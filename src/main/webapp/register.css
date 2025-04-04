@@ -1,0 +1,76 @@
+   @charset "ISO-8859-1";
+
+*{
+    box-sizing: border-box;
+    margin : 0;
+}
+.registercontainer{
+    position: fixed;
+    left:10rem;
+    top:4rem;
+    border: 1px solid black;
+    height:40rem;
+    width: 35rem;
+    box-shadow: 1px 1px 10px ;
+}
+.input{
+    border-radius: 20px;
+    width: 20em;
+    height: 3em;
+    background-color:aliceblue;
+    border: 0;
+    box-shadow: 1px 1px 1px grey ;
+    font-family: sans-serif;
+    text-align: center;
+}
+.formcontainer{
+    text-align: center;
+}
+.register-img{
+	 height : 500rem;
+	 width : 1650rem;
+	 position : fixed;
+	
+}
+.signuptitle{
+    font-family: "Calistoga", serif;
+    margin: 0.1em 0em 1em 0em;
+    font-size: 3em;
+    display:flex;
+    justify-content: center;
+}
+#registerbtn{
+    color:white;
+    margin: 2em 0em;
+    background-color:rgb(254, 57, 22);
+    font-weight: bold;
+}
+#registerbtn:hover{
+    box-shadow: 1px 1px 10px rgb(254, 40, 2);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.loginmesg{
+	font-family :georgia;
+	color :white;
+	font-weight : bold;
+    margin: 2em  0em 0em 9em;
+}
+.login{
+	
+    text-decoration:none;
+    border-radius : 5px;
+    padding : 2px 5px;
+    color: black;
+    font-weight : bold;
+    color : white;
+    
+}
+.login:hover{
+	color : black;
+	background-color : white;
+	box-shadow : 1px 1px 10px white;
+    font-weight: bold;
+    transition:0.3s;
+}

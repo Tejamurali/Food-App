@@ -1,0 +1,108 @@
+@charset "ISO-8859-1";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.title-container{
+	text-align : center;
+}
+.title{
+	 font-family: "Calistoga", serif;
+	 font-size : 1.8rem;
+	 color : rgb(245, 132, 47);
+}
+.bill-title-container{
+	margin : 1rem;
+	text-align : center;
+}
+.bill-title{
+	font-family : georgia;
+	font-size : 1.3rem;
+}
+.bill-container{
+	width : 60%;
+	height : auto;
+	margin : 1rem auto;
+	box-shadow : 1px 1px 10px black;
+}
+.payment-container{
+	width : 60%;
+	margin : 2rem auto;
+	text-align : center;
+}
+.option-container{
+	width : 60%;
+	margin : 2rem auto;
+	border : 1px solid red;
+	color : red;
+}
+.bill-heading{
+	display : flex;
+	justify-content : space-between;
+	padding : 0.5rem 1rem;
+	background-color : black;
+	color : white;
+	font-family : verdana;
+	
+}
+.bill{
+	padding : 1rem;
+}
+.bill-card{
+	display : flex;
+	justify-content : space-between;
+	padding : 1rem;
+	margin : 1rem 0rem;
+	font-family: "Calistoga", serif;
+	border-bottom : 1px solid grey;
+	
+}
+
+.subtotal{
+	display : flex;
+	justify-content : end;
+	gap : 10%;
+	padding : 1rem;
+	font-family: "Calistoga", serif;
+}
+.tax{
+	display : flex;
+	justify-content : end;
+	gap : 10%;
+	padding : 1rem 0.5rem;
+	font-family: "Calistoga", serif;
+}
+.grand-total{
+	display : flex;
+	justify-content : end;
+}
+.grand-total-title{
+	font-size : 1.3rem;
+	font-family: impact;
+	padding : 0.5rem 2rem;
+	background-color : black;
+	color : white;
+}
+.totalbill-container{
+	padding : 1rem ;
+	
+}
+.design{
+	padding : 0.5rem;
+	background-color : rgb(255, 221, 0);
+}
+.payment{
+	text-decoration : none;
+	border : 0;
+	color : green;
+	font-family : impact;
+	font-size : 1.2rem;
+}
+.payment:hover{
+	padding : 0.5rem 3rem;
+	color : white;
+	background-color : green;
+	transition : ease-in-out 1s;
+}

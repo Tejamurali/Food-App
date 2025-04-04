@@ -1,0 +1,162 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.allrestaurants{
+	position : fixed;
+	top : 3px;
+	display: flex;
+	flex-direction : column;
+	justify-content:space-around;
+	width : 18em;
+	box-shadow : 0px 0px 5px ;
+}
+.listname{
+	font-family: "Calistoga", serif;
+	font-size : 1.8em;
+	margin : 1rem 0rem 1.5rem 1rem;
+}
+.listrestaurants{
+	font-family: "Calistoga", serif;
+	font-size : 1.2rem;
+	padding : 0.5em;
+	margin : 0em 0.5em 0em 0.5em ;
+	text-decoration : none;
+	color : black;
+}
+.listrestaurants:hover{
+	color : white;
+	background-color : rgba(255, 179, 0, 0.991);
+}
+.restaurantcontainer{
+	display: flex;
+	flex-direction :row;
+	justify-content:space-between;
+	flex-wrap: wrap;
+	position : absolute;
+	width : 80em;
+	top : 5em;
+	left : 20em;
+	
+}
+.restaurant-card{
+	margin : 0em 0em 1em 0em;
+	width : 25em;
+	height : 20em;
+	border : 1px solid black;
+	border-radius : 5px;
+}
+.restaurantnav{
+	display: flex;
+	flex-direction :row;
+	justify-content:space-around;
+	position : absolute;
+	left : 20em;
+	width : 80em;
+	height : 3em;
+	box-shadow : 1px 1px 5px ;
+}
+.restaurant-home{
+	font-family: "Calistoga", serif;
+	padding : 1em 5em;
+	color : black;
+	text-decoration : none;
+	
+}
+.restaurant-home:hover{
+	color : white;
+	background-color : rgba(0, 0, 0, 0.902);
+}
+.restaurant-img{
+	height : 200px;
+	width : 396px;
+	border-radius : 10px 10px 0px 0px ;
+}
+.restaurant-name{
+	font-family: "Pacifico", cursive;
+	font-size : 1.5rem;
+	color : grey;
+}
+.card-details{
+	height : 7em;
+	
+	border-radius : 3px;
+}
+.card-details2{
+	margin : 0.2rem 0rem 0rem 0rem;
+	display: flex;
+	flex-direction :row;
+	justify-content:space-around;
+	
+}
+.restaurant-cuisine{
+	padding : 0.3em 0em;
+	font-weight : bold;
+	color : grey;
+}
+.breakline{
+	font-size : 29px;
+}
+.restaurant-delivarttime{
+	padding : 0.4em 0em;
+	font-weight : bold;
+	color : grey;
+}
+.restaurant-ratings{
+	font-weight : bold;
+	margin : 0em 0em 0.2em 0em;
+}
+.restaurant-isactive{
+	padding : 0.4em 0em;
+}
+.cuisinetype{
+	padding : 0.1rem 0.5rem;
+	border-radius : 10px;
+	background-color : rgba(240, 188, 188, 0.998);
+	color : red;
+	font-weight : bold;
+	margin : 0rem 0rem 0rem 0.3rem;
+}
+.ratingstar{
+	font-size : 1.3em;
+	color : gold;
+	font-weight : bold;
+}
+.restaurant-open{
+	font-family :impact;
+	color : rgb(2, 174, 2);
+}
+.restaurant-closed{
+	font-family :impact;
+	color : red;
+
+}
+.restaurant-address{
+	font-family :verdana;
+	padding : 0.5em 0em 0em 0.5em;
+	font-size : 1rem;
+	font-weight: 100;
+	color : grey;
+}
+.viewcart-container{
+	display: flex;
+	flex-direction :row;
+	justify-content:space-between;
+	
+}
+.viewcart{
+	font-weight : bold;
+	margin : 0.5rem;
+	padding : 0rem 0.2rem 0rem 0.2rem;
+	color : black;
+	border-radius : 5px;
+}
+.viewcart:hover{
+	font-family: "Calistoga", serif;
+	background-color : rgb(219, 5, 112);
+	transition : 0.5s;
+	color :white;
+	font-weight : lighter;
+	box-shadow : 1px 1px 10px rgb(219, 5, 112);
+}

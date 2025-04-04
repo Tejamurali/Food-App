@@ -1,0 +1,230 @@
+@charset "ISO-8859-1";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.fooditem1 {
+	height: 20rem;
+	width: 30rem
+}
+
+.fooditem2 {
+	height: 25rem;
+	width: 25rem;
+}
+.fooditem3 {
+	height: 25rem;
+	width: 25rem;
+}
+
+.foodcontainer1 {
+	position: absolute;
+	top: 18rem;
+	left: -1rem;
+}
+
+.foodcontainer2 {
+	position: absolute;
+	right: -7rem;
+	top: -7rem;
+}
+.foodcontainer3 {
+	position: absolute;
+	right: -7rem;
+	bottom : 0rem;
+}
+.formcontainer2 {
+	display: flex;
+	justify-content: center;
+}
+
+.formcontainer {
+	position: absolute;
+	margin: 1rem 35%;
+	height: 35rem;
+	width: 30rem;
+	border: 1px solid black;
+}
+
+.logintitle {
+	font-family: "Calistoga", serif;
+	margin: 0.1em 0em 0em 0em;
+	font-size: 3em;
+	display: flex;
+	justify-content: center;
+}
+
+.titledesc {
+	display: flex;
+	justify-content: center;
+}
+
+.titledesc {
+	margin: 6em 0em 0em 0em;
+	color: grey;
+}
+
+.desc {
+	color: tomato;
+	font-weight: 550;
+}
+
+.formcontainer:hover {
+	transition: 0.2s;
+	box-shadow: 3px 3px 10px grey;
+}
+
+.form {
+	margin: 3em 7em 0em 7em;
+}
+
+.input {
+	border-radius: 20px;
+	width: 20em;
+	height: 3em;
+	background-color: aliceblue;
+	border: 0;
+	box-shadow: 1px 1px 1px grey;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#loginbtn {
+	margin: 2em 0em;
+	background-color: tomato;
+	border: 0;
+	color: white;
+}
+
+#loginbtn:hover {
+	box-shadow: 1px 1px 10px tomato;
+	color: white;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.forgettag {
+	text-decoration: none;
+	color: tomato;
+	font-weight: bold;
+	margin: 0em 0em 0em 2em;
+}
+
+.forgettag:hover {
+	font-weight: bolder;
+	transition: 0.3s;
+}
+
+.inputcheckbox {
+	margin: 1em 0em 0em 0em;
+	color: tomato;
+	border: 1px solid tomato;
+}
+
+.formline {
+	margin: 0em 7em;
+	color: silver;
+}
+
+.loginwithbtn {
+	display: inline;
+	margin: 2.5em 0em 0em 7em;
+	height: 2.5em;
+	width: 2.5em;
+	border-radius: 20px;
+}
+
+.loginwithbtn:hover {
+	box-shadow: 1px 1px 10px black;
+	transition: 0.3s;
+}
+
+#btn1 {
+	background-image:
+		url("https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?w=176&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+}
+
+#btn2 {
+	background-image:
+		url("https://th.bing.com/th/id/OIP.aPyHWMu3KHjwJUWdGrEkZQHaHa?w=160&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+}
+
+#btn3 {
+	background-image:
+		url("https://th.bing.com/th/id/OIP.Sbs-M2-y31gNoj9n-IIeowHaHa?w=189&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 0;
+	cursor: pointer;
+}
+
+.registermesg {
+	margin: 3em 0em 0em 7.5em;
+}
+
+.register {
+	text-decoration: none;
+	color: tomato;
+}
+
+.register:hover {
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.input::placeholder {
+	font-weight: 300;
+}
+
+.input:focus {
+	text-align: center;
+}
+
+.input:active {
+	text-align: center;
+}
+
+.input::after {
+	text-align: center;
+}
+
+.input::target-text {
+	font-family: sans-serif;
+	font-size: large;
+}
+
+.input::backdrop {
+	visibility: hidden;
+}
+
+#wronginput {
+	border: 2px solid red;
+}
+
+.wrongmessage {
+	color: red;
+	margin: 0em 0em 0em 3em;
+}
+
+.wrongmessage2 {
+	color: red;
+	margin: 0em 0em 0em 1em;
+}
+
+#correctemail {
+	border: 2px solid green;
+}
+
+#correctpassword {
+	border: 2px solid green;
+}

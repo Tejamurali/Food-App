@@ -1,0 +1,53 @@
+@charset "ISO-8859-1";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.order-container{
+	margin : 10% auto;
+	border : 1px solid red;
+	height : 60vh;
+	width : 50vw;
+	
+}
+.image-container{
+	border : 1px solid red;
+	height : 55%;
+}
+.message-container{
+	border : 1px solid black;
+	height : 25%;
+	text-align : center;
+}
+.buttons-container{
+	border : 1px solid blue;
+	height : 20%;
+	display : flex;
+	justify-content : space-around;
+	align-items : center;
+}
+.order-confirmmsg{
+	 font-family: "Archivo Black", sans-serif;
+	 font-size : 2rem;
+	 margin : 0.3rem 0rem;
+}
+.thankyou-msg{
+	font-size : 1.5rem;
+}
+.order-received-msg{
+	font-size : 1rem;
+	font-family : verdana;
+}
+.return-menu-btn{
+	border : 1px solid red;
+	padding : 0.5rem 5rem;
+	font-size : 1.5rem;
+	font-family : impact;
+}
+.return-home-btn{
+	border : 1px solid red;
+	font-size : 1.5rem;
+	padding : 0.5rem 5rem;
+	font-family : impact;
+}

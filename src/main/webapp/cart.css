@@ -1,0 +1,121 @@
+@charset "ISO-8859-1";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.title{
+	display : flex;
+	justify-content : space-around;
+}
+.your-cart{
+	font-family : "Calistoga", serif;
+	color : rgb(245, 132, 47);
+	font-size : 2rem;
+}
+.side-dishes{
+	font-family : "Calistoga", serif;
+	color : rgb(245, 132, 47);
+	font-size : 2rem;
+}
+.cart-container{
+	margin : 1em 0em 0em 0em;
+	width : 65%;
+	padding : 1rem 3rem 0rem 1rem;
+	
+}
+.item-container{
+	display : flex;
+	flex-direction : row;
+	justify-content : space-between;
+	margin : 0rem 0rem 1rem 0rem;
+	border-bottom : 1px solid silver;
+	width : 100%;
+	text-align : center;
+	align-items : center;
+}
+.item-img{
+	height : 100px;
+	width : 150px;
+}
+.item-name{
+	font-family: "Calistoga", serif;
+	background : linear-gradient(to right,rgb(2, 192, 244),rgb(2, 192, 244),rgb(3, 173, 116),rgb(244, 2, 228),red);
+	-webkit-background-clip : text;
+	background-clip : text;
+	color : transparent;
+	width : 20%;
+	font-size : 1.3rem;
+}
+.item-price{
+	font-family: "Calistoga", serif;
+	color : rgb(0, 171, 0) ;
+	font-weight : bold;
+}
+.item-quantity{
+	font-family: "Calistoga", serif;
+	color : tomato;
+	font-weight : bold;
+}
+.item-subtotal{
+	border : 0;
+	border-radius : 3px;
+	padding : 0.3em 0.6em;
+	background-color : #eaedf0be;
+	box-shadow : 0px 0px 20px #EAEDF0;
+	font-family: "Calistoga", serif;
+	color : rgb(6, 78, 245);
+}
+#subtotal{
+	font-family : verdana;
+	color : grey;
+}
+.item-update{
+	border : 0;
+	border-radius : 3px;
+	padding : 0.1em 0.5em;
+	font-family : "Calistoga", serif;
+	cursor : pointer;
+	background-color : white;
+}
+.item-update:hover{
+	background-color : #18bcf2;
+	box-shadow : 1px 1px 10px #18bcf2;
+	color : white;
+}
+.update{
+	text-decoration : none;
+	color : black;
+}
+.update:hover{
+	color : white;
+}
+.item-delete{
+	border : 0;
+	border-radius : 3px;
+	padding : 0.1em 0.5em;
+}
+.item-delete:hover{
+	background-color : red;
+	box-shadow : 1px 1px 10px red;
+}
+.delete{
+	text-decoration : none;
+	color : black;
+	font-family : "Calistoga", serif;
+}
+.delete:hover{
+	color : white;
+}
+.empty-cart{
+	display : flex;
+	flex-direction : row;
+	justify-content:center;
+	align-items : center;
+	height : 80vh;
+}
+.empty-cart-msg{
+	font-family : "Calistoga", serif;
+	font-size : 2rem;
+	color : skyblue;
+}

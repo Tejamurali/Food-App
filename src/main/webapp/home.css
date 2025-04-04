@@ -1,0 +1,201 @@
+@charset "ISO-8859-1";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.leftnavbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100vh; 
+    width: 15vw; 
+    box-shadow: 1px 1px 5px;
+    overflow-y: auto; 
+}
+
+.topnavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    height: 3.2rem; 
+    width: calc(100vw - 15vw); 
+    margin-left: 15vw; 
+    box-shadow: 1px 1px 5px;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 1.1rem; 
+    font-family: "Calistoga", serif;
+    padding: 1rem 1rem 0.5rem;
+    color: rgb(245, 132, 47);
+    box-shadow: 1px 1px 5px rgb(245, 132, 47);
+}
+
+.topicon, .bottomicon {
+    font-family: "Calistoga", serif;
+    margin: 0.3rem 0.5rem;
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    font-size: 1rem; 
+    border-radius: 5px;
+}
+
+
+.topicon:hover, .bottomicon:hover  {
+    background-color: rgb(245, 132, 47);
+    color: white;
+}
+
+#help {
+    font-size: 1rem; 
+    border: 1px solid black;
+    padding: 0rem 0.5rem; 
+    border-radius: 30px;
+    margin: 0 0.2rem;
+}
+
+.line {
+    height: 1px;
+    width: 80%; 
+    background-color: grey;
+    margin: 0 auto;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 13rem;
+}
+
+.welcomemsg {
+    font-family: "Calistoga", serif;
+    padding: 1rem;
+}
+
+.searchinput {
+    letter-spacing: 0.2ch;
+    font-family: "Calistoga", serif;
+    width: 40vw; 
+    height: 2.2em;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+#searchinput:focus {
+    color: red;
+}
+
+.searchinput::placeholder {
+    font-size: 1.5em;
+}
+
+.searchbtn {
+    width: 8vw; 
+    height: 2rem;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.searchbtn:hover {
+    background-color: rgb(245, 132, 47);
+    color: white;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgb(245, 132, 47);
+}
+
+.profileimg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.notification {
+    font-size: 1.3rem;
+    margin: 0.5em 0em 0em 1em ;
+}
+
+.settings {
+	margin : 0.15em 0em 0em 0em;
+    font-size: 1.8rem;
+}
+
+.discountcarousel {
+    position: fixed;
+    left: 16vw; 
+    top: 4rem;
+    height: 20rem; 
+    width: calc(98.5vw - 15vw); 
+    border-radius: 5px;
+}
+
+#carouselimg1, #carouselimg2, #carouselimg3 {
+    height: 100%; 
+    width: 100%; 
+    border-radius: 5px;
+}
+
+#logoutbtn {
+	color : red;
+    border: 0;
+    background-color: white;
+}
+
+#logoutbtn:hover {
+    background-color: rgb(245, 132, 47);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .leftnavbar, .topnavbar, .discountcarousel {
+        width: 100vw; 
+        left: 0;
+        margin-left: 0;
+    }
+
+    .discountcarousel {
+        height: 10rem; 
+    }
+
+    .searchinput {
+        width: 80vw; 
+    }
+
+    .searchbtn {
+        width: 30vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem; 
+    }
+
+    .topicon, .bottomicon {
+        font-size: 0.9rem; 
+        padding: 0.4rem 0.5rem; 
+    }
+
+    .searchinput {
+        width: 90vw; 
+    }
+
+    .searchbtn {
+        width: 40vw; 
+    }
+}
+#cart-symbol:hover{
+	color : white;
+	
+}
