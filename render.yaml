@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: food-app
+    runtime: java
+    buildCommand: mvn clean package
+    startCommand: java -jar target/Food-App.war
+    envVars:
+      - key: DB_HOST
+        value: localhost
+      - key: DB_USER
+        value: root
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_NAME
+        value: foodapp_db
+      - key: PORT
+        value: "8080"
