@@ -1,15 +1,21 @@
-# Use Java 11
-FROM maven:3.8.6-openjdk-11 AS build
+# ── Stage 1: Build the WAR file ──────────────────────────────
+FROM maven:3.8.8-eclipse-temurin-11 AS build
 
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-# Run stage
-FROM openjdk:11-jre-slim
-WORKDIR /app
-COPY --from=build /app/target/Food-App.war ./Food-App.war
+# ── Stage 2: Run with Tomcat ─────────────────────────────────
+FROM tomcat:9.0-jdk11-temurin
 
+# Remove default Tomcat apps
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+# Copy your WAR into Tomcat
+COPY --from=build /app/target/Food-App.war /usr/local/tomcat/webapps/ROOT.war
+
+# Expose port
 EXPOSE 8080
 
-CMD ["java", "-Dserver.port=8080", "-jar", "Food-App.war"]
+# Start Tomcat
+CMD ["catalina.sh", "run"]
